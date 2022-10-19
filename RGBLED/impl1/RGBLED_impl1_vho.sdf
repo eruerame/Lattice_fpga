@@ -1,0 +1,90 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "RGBLED")
+  (DATE "Wed Oct 19 21:03:26 2022")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.12.0.240.2")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "led_2_B")
+    (INSTANCE led_2_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led2 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led_1_B")
+    (INSTANCE led_1_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led1 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "led_0_B")
+    (INSTANCE led_0_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO led0 (3220:3334:3448)(3220:3334:3448))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "sw_2_B")
+    (INSTANCE sw_2_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH sw2 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge sw2) (3330:3330:3330))
+      (WIDTH (negedge sw2) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "sw_1_B")
+    (INSTANCE sw_1_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH sw1 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge sw1) (3330:3330:3330))
+      (WIDTH (negedge sw1) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "sw_0_B")
+    (INSTANCE sw_0_I)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH sw0 PADDI (1223:1297:1372)(1223:1297:1372))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge sw0) (3330:3330:3330))
+      (WIDTH (negedge sw0) (3330:3330:3330))
+    )
+  )
+  (CELL
+    (CELLTYPE "RGBLED")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT sw_2_I/PADDI led_2_I/PADDO (2924:3145:3366)(2924:3145:3366))
+        (INTERCONNECT sw_1_I/PADDI led_1_I/PADDO (2887:3111:3336)(2887:3111:3336))
+        (INTERCONNECT sw_0_I/PADDI led_0_I/PADDO (3316:3594:3873)(3316:3594:3873))
+      )
+    )
+  )
+)

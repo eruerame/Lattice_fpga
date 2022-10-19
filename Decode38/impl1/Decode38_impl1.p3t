@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Decode38_impl1.log"
+-o "Decode38_impl1.csv"
+-pr "Decode38_impl1.prf"

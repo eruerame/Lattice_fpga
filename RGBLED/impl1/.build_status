@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1666184605"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1666184605"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1666184606"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1666184608"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1666184610"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1666184601">
+            <Task name="Map" build_result="2" update_result="0" update_time="1666184601"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1666184601"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1666184602"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1666184602"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1666184603">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1666184603"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1666184604"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1666184604"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1666184600">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1666184600"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1666184600"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1666184333"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1666184333"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/RGBLED_impl1_map.vdb" last_build_time="1666184601" last_build_size="25913"/>
+        <Report name="IBIS/RGBLED_impl1.ibs" last_build_time="1666184605" last_build_size="65372"/>
+        <Report name="RGBLED_impl1.bgn" last_build_time="1666184610" last_build_size="4258"/>
+        <Report name="RGBLED_impl1.bit" last_build_time="1666184608" last_build_size="16047"/>
+        <Report name="RGBLED_impl1.ior" last_build_time="1666184604" last_build_size="1751"/>
+        <Report name="RGBLED_impl1.jed" last_build_time="1666184610" last_build_size="849163"/>
+        <Report name="RGBLED_impl1.lsedata" last_build_time="1666184600" last_build_size="1046"/>
+        <Report name="RGBLED_impl1.ncd" last_build_time="1666184603" last_build_size="4427"/>
+        <Report name="RGBLED_impl1.ngd" last_build_time="1666184600" last_build_size="4507"/>
+        <Report name="RGBLED_impl1.tw1" last_build_time="1666184601" last_build_size="3811"/>
+        <Report name="RGBLED_impl1.twr" last_build_time="1666184604" last_build_size="4948"/>
+        <Report name="RGBLED_impl1_map.ncd" last_build_time="1666184600" last_build_size="3727"/>
+        <Report name="RGBLED_impl1_mapvho.sdf" last_build_time="1666184602" last_build_size="1964"/>
+        <Report name="RGBLED_impl1_mapvho.vho" last_build_time="1666184602" last_build_size="16984"/>
+        <Report name="RGBLED_impl1_mapvo.sdf" last_build_time="1666184602" last_build_size="1994"/>
+        <Report name="RGBLED_impl1_mapvo.vo" last_build_time="1666184602" last_build_size="2646"/>
+        <Report name="RGBLED_impl1_vho.sdf" last_build_time="1666184606" last_build_size="2018"/>
+        <Report name="RGBLED_impl1_vho.vho" last_build_time="1666184606" last_build_size="16975"/>
+        <Report name="RGBLED_impl1_vo.sdf" last_build_time="1666184605" last_build_size="2048"/>
+        <Report name="RGBLED_impl1_vo.vo" last_build_time="1666184605" last_build_size="2637"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,35 @@
+#Start recording tcl command: 10/19/2022 20:41:05
+#Project Location: E:/lattice_fpga/LED; Project name: LED
+E:/lattice_fpga/RGBLED
+RGBLED
+#Start recording tcl command: 10/19/2022 20:55:08
+#Project Location: E:/lattice_fpga/RGBLED; Project name: RGBLED
+prj_project new -name "LED" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_src add "E:/lattice_fpga/LED/LED.v"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -forceAll
+prj_run PAR -impl impl1 -task IOTiming
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task TimingSimFileVlg
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task TimingSimFileVHD
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -task Bitgen
+pgr_project save "E:/lattice_fpga/LED/impl1/impl1.xcf"
+prj_src add -exclude "E:/lattice_fpga/LED/impl1/impl1.xcf"
+prj_src enable "E:/lattice_fpga/LED/impl1/impl1.xcf"
+prj_run Export -impl impl1
+prj_run Export -impl impl1 -forceAll
+pgr_program run
+pgr_project save "E:/lattice_fpga/LED/impl1/impl1.xcf"
+prj_project save
+prj_project close
+prj_project new -name "RGBLED" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+#Stop recording: 10/19/2022 20:55:08

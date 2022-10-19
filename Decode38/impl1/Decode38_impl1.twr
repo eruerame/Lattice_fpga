@@ -1,0 +1,266 @@
+
+Loading design for application trce from file decode38_impl1.ncd.
+Design name: Decode38
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Wed Oct 19 21:18:32 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o Decode38_impl1.twr -gui Decode38_impl1.ncd Decode38_impl1.prf 
+Design file:     decode38_impl1.ncd
+Preference file: decode38_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            24 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    9.275ns delay sw[0] to led[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M7.PAD to       M7.PADDI sw[0]
+ROUTE         8     3.013       M7.PADDI to     R20C24C.B1 sw_c_0
+CTOF_DEL    ---     0.495     R20C24C.B1 to     R20C24C.F1 SLICE_3
+ROUTE         1     1.838     R20C24C.F1 to      P12.PADDO led_c_2
+DOPAD_DEL   ---     2.797      P12.PADDO to        P12.PAD led[2]
+                  --------
+                    9.275   (47.7% logic, 52.3% route), 3 logic levels.
+
+Report:    8.971ns delay sw[0] to led[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M7.PAD to       M7.PADDI sw[0]
+ROUTE         8     2.601       M7.PADDI to     R20C24B.B1 sw_c_0
+CTOF_DEL    ---     0.495     R20C24B.B1 to     R20C24B.F1 SLICE_2
+ROUTE         1     1.946     R20C24B.F1 to      M11.PADDO led_c_3
+DOPAD_DEL   ---     2.797      M11.PADDO to        M11.PAD led[3]
+                  --------
+                    8.971   (49.3% logic, 50.7% route), 3 logic levels.
+
+Report:    8.929ns delay sw[0] to led[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M7.PAD to       M7.PADDI sw[0]
+ROUTE         8     2.344       M7.PADDI to     R20C24A.C1 sw_c_0
+CTOF_DEL    ---     0.495     R20C24A.C1 to     R20C24A.F1 SLICE_1
+ROUTE         1     2.161     R20C24A.F1 to      M12.PADDO led_c_1
+DOPAD_DEL   ---     2.797      M12.PADDO to        M12.PAD led[1]
+                  --------
+                    8.929   (49.5% logic, 50.5% route), 3 logic levels.
+
+Report:    8.691ns delay sw[0] to led[6]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M7.PAD to       M7.PADDI sw[0]
+ROUTE         8     3.013       M7.PADDI to     R20C24C.B0 sw_c_0
+CTOF_DEL    ---     0.495     R20C24C.B0 to     R20C24C.F0 SLICE_3
+ROUTE         1     1.254     R20C24C.F0 to       N9.PADDO led_c_6
+DOPAD_DEL   ---     2.797       N9.PADDO to         N9.PAD led[6]
+                  --------
+                    8.691   (50.9% logic, 49.1% route), 3 logic levels.
+
+Report:    8.607ns delay sw[1] to led[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M8.PAD to       M8.PADDI sw[1]
+ROUTE         8     2.345       M8.PADDI to     R20C24C.C1 sw_c_1
+CTOF_DEL    ---     0.495     R20C24C.C1 to     R20C24C.F1 SLICE_3
+ROUTE         1     1.838     R20C24C.F1 to      P12.PADDO led_c_2
+DOPAD_DEL   ---     2.797      P12.PADDO to        P12.PAD led[2]
+                  --------
+                    8.607   (51.4% logic, 48.6% route), 3 logic levels.
+
+Report:    8.594ns delay sw[1] to led[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M8.PAD to       M8.PADDI sw[1]
+ROUTE         8     2.224       M8.PADDI to     R20C24B.D1 sw_c_1
+CTOF_DEL    ---     0.495     R20C24B.D1 to     R20C24B.F1 SLICE_2
+ROUTE         1     1.946     R20C24B.F1 to      M11.PADDO led_c_3
+DOPAD_DEL   ---     2.797      M11.PADDO to        M11.PAD led[3]
+                  --------
+                    8.594   (51.5% logic, 48.5% route), 3 logic levels.
+
+Report:    8.592ns delay sw[0] to led[4]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M7.PAD to       M7.PADDI sw[0]
+ROUTE         8     2.601       M7.PADDI to     R20C24B.B0 sw_c_0
+CTOF_DEL    ---     0.495     R20C24B.B0 to     R20C24B.F0 SLICE_2
+ROUTE         1     1.567     R20C24B.F0 to      P11.PADDO led_c_4
+DOPAD_DEL   ---     2.797      P11.PADDO to        P11.PAD led[4]
+                  --------
+                    8.592   (51.5% logic, 48.5% route), 3 logic levels.
+
+Report:    8.433ns delay sw[0] to led[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M7.PAD to       M7.PADDI sw[0]
+ROUTE         8     2.223       M7.PADDI to     R20C24D.D1 sw_c_0
+CTOF_DEL    ---     0.495     R20C24D.D1 to     R20C24D.F1 SLICE_0
+ROUTE         1     1.786     R20C24D.F1 to      N13.PADDO led_c_0
+DOPAD_DEL   ---     2.797      N13.PADDO to        N13.PAD led[0]
+                  --------
+                    8.433   (52.5% logic, 47.5% route), 3 logic levels.
+
+Report:    8.369ns delay sw[1] to led[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M8.PAD to       M8.PADDI sw[1]
+ROUTE         8     1.784       M8.PADDI to     R20C24A.D1 sw_c_1
+CTOF_DEL    ---     0.495     R20C24A.D1 to     R20C24A.F1 SLICE_1
+ROUTE         1     2.161     R20C24A.F1 to      M12.PADDO led_c_1
+DOPAD_DEL   ---     2.797      M12.PADDO to        M12.PAD led[1]
+                  --------
+                    8.369   (52.9% logic, 47.1% route), 3 logic levels.
+
+Report:    8.335ns delay sw[1] to led[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.132         M8.PAD to       M8.PADDI sw[1]
+ROUTE         8     2.125       M8.PADDI to     R20C24D.A1 sw_c_1
+CTOF_DEL    ---     0.495     R20C24D.A1 to     R20C24D.F1 SLICE_0
+ROUTE         1     1.786     R20C24D.F1 to      N13.PADDO led_c_0
+DOPAD_DEL   ---     2.797      N13.PADDO to        N13.PAD led[0]
+                  --------
+                    8.335   (53.1% logic, 46.9% route), 3 logic levels.
+
+Report:    9.275ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            11 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    3.013ns maximum delay on sw_c_0
+
+           Delays             Connection(s)
+           3.013ns         M7.PADDI to R20C24C.B1      
+           3.013ns         M7.PADDI to R20C24C.B0      
+           2.601ns         M7.PADDI to R20C24B.B1      
+           2.601ns         M7.PADDI to R20C24B.B0      
+           2.344ns         M7.PADDI to R20C24A.C1      
+           2.344ns         M7.PADDI to R20C24A.C0      
+           2.223ns         M7.PADDI to R20C24D.D1      
+           2.223ns         M7.PADDI to R20C24D.D0      
+
+Report:    2.345ns maximum delay on sw_c_1
+
+           Delays             Connection(s)
+           2.345ns         M8.PADDI to R20C24C.C1      
+           2.345ns         M8.PADDI to R20C24C.C0      
+           2.224ns         M8.PADDI to R20C24B.D1      
+           2.224ns         M8.PADDI to R20C24B.D0      
+           1.784ns         M8.PADDI to R20C24A.D1      
+           1.784ns         M8.PADDI to R20C24A.D0      
+           2.125ns         M8.PADDI to R20C24D.A1      
+           2.125ns         M8.PADDI to R20C24D.A0      
+
+Report:    2.161ns maximum delay on led_c_1
+
+           Delays             Connection(s)
+           2.161ns       R20C24A.F1 to M12.PADDO       
+
+Report:    1.946ns maximum delay on led_c_3
+
+           Delays             Connection(s)
+           1.946ns       R20C24B.F1 to M11.PADDO       
+
+Report:    1.838ns maximum delay on led_c_2
+
+           Delays             Connection(s)
+           1.838ns       R20C24C.F1 to P12.PADDO       
+
+Report:    1.786ns maximum delay on led_c_0
+
+           Delays             Connection(s)
+           1.786ns       R20C24D.F1 to N13.PADDO       
+
+Report:    1.658ns maximum delay on sw_c_2
+
+           Delays             Connection(s)
+           1.658ns         M9.PADDI to R20C24C.A1      
+           1.658ns         M9.PADDI to R20C24C.A0      
+           1.438ns         M9.PADDI to R20C24B.C1      
+           1.438ns         M9.PADDI to R20C24B.C0      
+           1.658ns         M9.PADDI to R20C24A.A1      
+           1.658ns         M9.PADDI to R20C24A.A0      
+           1.438ns         M9.PADDI to R20C24D.C1      
+           1.438ns         M9.PADDI to R20C24D.C0      
+
+Report:    1.567ns maximum delay on led_c_4
+
+           Delays             Connection(s)
+           1.567ns       R20C24B.F0 to P11.PADDO       
+
+Report:    1.537ns maximum delay on led_c_7
+
+           Delays             Connection(s)
+           1.537ns       R20C24A.F0 to P9.PADDO        
+
+Report:    1.254ns maximum delay on led_c_6
+
+           Delays             Connection(s)
+           1.254ns       R20C24C.F0 to N9.PADDO        
+
+Report:    3.013ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     9.275 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     3.013 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 24 paths, 11 nets, and 32 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+

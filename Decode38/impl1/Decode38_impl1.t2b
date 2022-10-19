@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "E:/lattice_fpga/Decode38"  

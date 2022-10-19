@@ -1,0 +1,268 @@
+<HTML>
+<HEAD><TITLE>Lattice TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Par_Twr"></A><B><U><big>Place & Route TRACE Report</big></U></B>
+
+Loading design for application trce from file led_impl1.ncd.
+Design name: LED
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2</big></U></B>
+Wed Oct 19 20:51:01 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o LED_impl1.twr -gui LED_impl1.ncd LED_impl1.prf 
+Design file:     led_impl1.ncd
+Preference file: led_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#par_twr_pref_0_0' Target='right'>Default path enumeration(0 errors)</A></LI>            8 items scored, 0 timing errors detected.
+
+<LI><A href='#par_twr_pref_0_1' Target='right'>Default net enumeration(0 errors)</A></LI>            8 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_0_0"></A>Preference: Default path enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    7.690ns delay key[2] to led[6]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        M14.PAD to      M14.PADDI key[2]
+ROUTE         1     2.870      M14.PADDI to       N9.PADDO led_c_2_c
+DOPAD_DEL   ---     3.448       N9.PADDO to         N9.PAD led[6]
+                  --------
+                    7.690   (62.7% logic, 37.3% route), 2 logic levels.
+
+Report:    7.677ns delay sw[0] to led[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         M7.PAD to       M7.PADDI sw[0]
+ROUTE         1     2.857       M7.PADDI to      N13.PADDO n5_c
+DOPAD_DEL   ---     3.448      N13.PADDO to        N13.PAD led[0]
+                  --------
+                    7.677   (62.8% logic, 37.2% route), 2 logic levels.
+
+Report:    7.660ns delay key[1] to led[5]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        M13.PAD to      M13.PADDI key[1]
+ROUTE         1     2.840      M13.PADDI to      N10.PADDO led_c_1_c
+DOPAD_DEL   ---     3.448      N10.PADDO to        N10.PAD led[5]
+                  --------
+                    7.660   (62.9% logic, 37.1% route), 2 logic levels.
+
+Report:    7.618ns delay key[0] to led[4]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        L14.PAD to      L14.PADDI key[0]
+ROUTE         1     2.798      L14.PADDI to      P11.PADDO led_c_0_c
+DOPAD_DEL   ---     3.448      P11.PADDO to        P11.PAD led[4]
+                  --------
+                    7.618   (63.3% logic, 36.7% route), 2 logic levels.
+
+Report:    7.618ns delay key[3] to led[7]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        N14.PAD to      N14.PADDI key[3]
+ROUTE         1     2.798      N14.PADDI to       P9.PADDO led_c_3_c
+DOPAD_DEL   ---     3.448       P9.PADDO to         P9.PAD led[7]
+                  --------
+                    7.618   (63.3% logic, 36.7% route), 2 logic levels.
+
+Report:    7.583ns delay sw[1] to led[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         M8.PAD to       M8.PADDI sw[1]
+ROUTE         1     2.763       M8.PADDI to      M12.PADDO n4_c
+DOPAD_DEL   ---     3.448      M12.PADDO to        M12.PAD led[1]
+                  --------
+                    7.583   (63.6% logic, 36.4% route), 2 logic levels.
+
+Report:    7.158ns delay sw[2] to led[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         M9.PAD to       M9.PADDI sw[2]
+ROUTE         1     2.338       M9.PADDI to      P12.PADDO n3_c
+DOPAD_DEL   ---     3.448      P12.PADDO to        P12.PAD led[2]
+                  --------
+                    7.158   (67.3% logic, 32.7% route), 2 logic levels.
+
+Report:    6.646ns delay sw[3] to led[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        M10.PAD to      M10.PADDI sw[3]
+ROUTE         1     1.826      M10.PADDI to      M11.PADDO n2_c
+DOPAD_DEL   ---     3.448      M11.PADDO to        M11.PAD led[3]
+                  --------
+                    6.646   (72.5% logic, 27.5% route), 2 logic levels.
+
+Report:    7.690ns is the maximum delay for this preference.
+
+
+================================================================================
+<A name="par_twr_pref_0_1"></A>Preference: Default net enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    2.870ns maximum delay on led_c_2_c
+
+           Delays             Connection(s)
+           2.870ns        M14.PADDI to N9.PADDO        
+
+Report:    2.857ns maximum delay on n5_c
+
+           Delays             Connection(s)
+           2.857ns         M7.PADDI to N13.PADDO       
+
+Report:    2.840ns maximum delay on led_c_1_c
+
+           Delays             Connection(s)
+           2.840ns        M13.PADDI to N10.PADDO       
+
+Report:    2.798ns maximum delay on led_c_3_c
+
+           Delays             Connection(s)
+           2.798ns        N14.PADDI to P9.PADDO        
+
+Report:    2.798ns maximum delay on led_c_0_c
+
+           Delays             Connection(s)
+           2.798ns        L14.PADDI to P11.PADDO       
+
+Report:    2.763ns maximum delay on n4_c
+
+           Delays             Connection(s)
+           2.763ns         M8.PADDI to M12.PADDO       
+
+Report:    2.338ns maximum delay on n3_c
+
+           Delays             Connection(s)
+           2.338ns         M9.PADDI to P12.PADDO       
+
+Report:    1.826ns maximum delay on n2_c
+
+           Delays             Connection(s)
+           1.826ns        M10.PADDI to M11.PADDO       
+
+Report:    2.870ns is the maximum delay for this preference.
+
+<A name="ptwr_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     7.690 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     2.870 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="ptwr_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 0 clocks:
+
+
+<A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 8 paths, 8 nets, and 8 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

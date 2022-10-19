@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1666185513"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1666185514"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1666185515"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1666185517"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1666185519"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1666185508">
+            <Task name="Map" build_result="2" update_result="0" update_time="1666185508"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1666185509"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1666185509"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1666185510"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1666185512">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1666185512"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1666185512"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1666185513"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1666185388">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1666185388"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1666185388"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1666185386"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1666185386"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/Decode38_impl1_map.vdb" last_build_time="1666185508" last_build_size="27891"/>
+        <Report name="Decode38_impl1.bgn" last_build_time="1666185519" last_build_size="4272"/>
+        <Report name="Decode38_impl1.bit" last_build_time="1666185517" last_build_size="16120"/>
+        <Report name="Decode38_impl1.ior" last_build_time="1666185513" last_build_size="1771"/>
+        <Report name="Decode38_impl1.jed" last_build_time="1666185519" last_build_size="849321"/>
+        <Report name="Decode38_impl1.lsedata" last_build_time="1666185388" last_build_size="6207"/>
+        <Report name="Decode38_impl1.ncd" last_build_time="1666185511" last_build_size="13978"/>
+        <Report name="Decode38_impl1.ngd" last_build_time="1666185388" last_build_size="11233"/>
+        <Report name="Decode38_impl1.tw1" last_build_time="1666185509" last_build_size="3961"/>
+        <Report name="Decode38_impl1.twr" last_build_time="1666185512" last_build_size="11475"/>
+        <Report name="Decode38_impl1_map.ncd" last_build_time="1666185508" last_build_size="11242"/>
+        <Report name="Decode38_impl1_mapvho.sdf" last_build_time="1666185510" last_build_size="6345"/>
+        <Report name="Decode38_impl1_mapvho.vho" last_build_time="1666185510" last_build_size="51444"/>
+        <Report name="Decode38_impl1_mapvo.sdf" last_build_time="1666185509" last_build_size="6427"/>
+        <Report name="Decode38_impl1_mapvo.vo" last_build_time="1666185509" last_build_size="7520"/>
+        <Report name="Decode38_impl1_vho.sdf" last_build_time="1666185515" last_build_size="6915"/>
+        <Report name="Decode38_impl1_vho.vho" last_build_time="1666185515" last_build_size="52555"/>
+        <Report name="Decode38_impl1_vo.sdf" last_build_time="1666185514" last_build_size="6997"/>
+        <Report name="Decode38_impl1_vo.vo" last_build_time="1666185514" last_build_size="7795"/>
+        <Report name="IBIS/Decode38_impl1.ibs" last_build_time="1666185513" last_build_size="67014"/>
+    </Strategy>
+</BuildStatus>

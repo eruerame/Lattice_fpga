@@ -1,0 +1,299 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.12.0.240.2
+// ldbanno -n Verilog -o Decode38_impl1_vo.vo -w -neg -gui Decode38_impl1.ncd 
+// Netlist created on Wed Oct 19 21:18:28 2022
+// Netlist written on Wed Oct 19 21:18:34 2022
+// Design is for device LCMXO2-4000HC
+// Design is for package CSBGA132
+// Design is for performance grade 4
+
+`timescale 1 ns / 1 ps
+
+module Decode38 ( sw, led );
+  input  [2:0] sw;
+  output [7:0] led;
+  wire   sw_c_0, sw_c_2, sw_c_1, led_c_5, led_c_0, led_c_7, led_c_1, led_c_4, 
+         led_c_3, led_c_6, led_c_2, VCCI;
+
+  SLICE_0 SLICE_0( .D1(sw_c_0), .C1(sw_c_2), .A1(sw_c_1), .D0(sw_c_0), 
+    .C0(sw_c_2), .A0(sw_c_1), .F0(led_c_5), .F1(led_c_0));
+  SLICE_1 SLICE_1( .D1(sw_c_1), .C1(sw_c_0), .A1(sw_c_2), .D0(sw_c_1), 
+    .C0(sw_c_0), .A0(sw_c_2), .F0(led_c_7), .F1(led_c_1));
+  SLICE_2 SLICE_2( .D1(sw_c_1), .C1(sw_c_2), .B1(sw_c_0), .D0(sw_c_1), 
+    .C0(sw_c_2), .B0(sw_c_0), .F0(led_c_4), .F1(led_c_3));
+  SLICE_3 SLICE_3( .C1(sw_c_1), .B1(sw_c_0), .A1(sw_c_2), .C0(sw_c_1), 
+    .B0(sw_c_0), .A0(sw_c_2), .F0(led_c_6), .F1(led_c_2));
+  sw_0_ \sw[0]_I ( .PADDI(sw_c_0), .sw0(sw[0]));
+  sw_1_ \sw[1]_I ( .PADDI(sw_c_1), .sw1(sw[1]));
+  sw_2_ \sw[2]_I ( .PADDI(sw_c_2), .sw2(sw[2]));
+  led_0_ \led[0]_I ( .PADDO(led_c_0), .led0(led[0]));
+  led_1_ \led[1]_I ( .PADDO(led_c_1), .led1(led[1]));
+  led_2_ \led[2]_I ( .PADDO(led_c_2), .led2(led[2]));
+  led_3_ \led[3]_I ( .PADDO(led_c_3), .led3(led[3]));
+  led_4_ \led[4]_I ( .PADDO(led_c_4), .led4(led[4]));
+  led_5_ \led[5]_I ( .PADDO(led_c_5), .led5(led[5]));
+  led_6_ \led[6]_I ( .PADDO(led_c_6), .led6(led[6]));
+  led_7_ \led[7]_I ( .PADDO(led_c_7), .led7(led[7]));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+  GSR GSR_INST( .GSR(VCCI));
+endmodule
+
+module SLICE_0 ( input D1, C1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut4 i82_2_lut_3_lut( .A(A1), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 i92_2_lut_3_lut( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5FFF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFF5) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_1 ( input D1, C1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40002 i79_2_lut_3_lut( .A(A1), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40003 i57_2_lut_3_lut( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hF5FF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFA) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_2 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40004 i87_2_lut_3_lut( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 i90_2_lut_3_lut( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFCF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hF3FF) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_3 ( input C1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40006 i85_2_lut_3_lut( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40007 i94_2_lut_3_lut( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hF7F7) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFBFB) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module sw_0_ ( output PADDI, input sw0 );
+
+  xo2iobuf sw_pad_0( .Z(PADDI), .PAD(sw0));
+
+  specify
+    (sw0 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge sw0, 0:0:0);
+    $width (negedge sw0, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( output Z, input PAD );
+
+  IBPD INST1( .I(PAD), .O(Z));
+endmodule
+
+module sw_1_ ( output PADDI, input sw1 );
+
+  xo2iobuf sw_pad_1( .Z(PADDI), .PAD(sw1));
+
+  specify
+    (sw1 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge sw1, 0:0:0);
+    $width (negedge sw1, 0:0:0);
+  endspecify
+
+endmodule
+
+module sw_2_ ( output PADDI, input sw2 );
+
+  xo2iobuf sw_pad_2( .Z(PADDI), .PAD(sw2));
+
+  specify
+    (sw2 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge sw2, 0:0:0);
+    $width (negedge sw2, 0:0:0);
+  endspecify
+
+endmodule
+
+module led_0_ ( input PADDO, output led0 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_0( .I(PADDO), .T(GNDI), .PAD(led0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0008 ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module led_1_ ( input PADDO, output led1 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_1( .I(PADDO), .T(GNDI), .PAD(led1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led_2_ ( input PADDO, output led2 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_2( .I(PADDO), .T(GNDI), .PAD(led2));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led_3_ ( input PADDO, output led3 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_3( .I(PADDO), .T(GNDI), .PAD(led3));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led_4_ ( input PADDO, output led4 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_4( .I(PADDO), .T(GNDI), .PAD(led4));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led_5_ ( input PADDO, output led5 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_5( .I(PADDO), .T(GNDI), .PAD(led5));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led_6_ ( input PADDO, output led6 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_6( .I(PADDO), .T(GNDI), .PAD(led6));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module led_7_ ( input PADDO, output led7 );
+  wire   GNDI;
+
+  xo2iobuf0008 led_pad_7( .I(PADDO), .T(GNDI), .PAD(led7));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => led7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
